@@ -1,0 +1,12 @@
+cairo
+gdk-pixbuf
+json-c
+libcap
+meson make
+pango
+pcre
+samurai make
+wayland
+wayland-protocols make
+wlroots
+xkeyboard-config

@@ -1,0 +1,6 @@
+cairo
+gdk-pixbuf2
+meson make
+ninja make
+wayland
+wayland-protocols make

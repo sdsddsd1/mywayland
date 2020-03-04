@@ -1,0 +1,18 @@
+#!/bin/sh -e
+
+ln -s waf-2.0.18 waf
+
+python waf configure \
+    --prefix=/usr \
+    --mandir=/usr/share/man \
+    --confdir=/etc/mpv \
+    --enable-alsa \
+    --enable-libass \
+    --enable-wayland \
+    --enable-wayland-protocols \
+    --enable-wayland-scanner \
+    --enable-vaapi-wayland \
+    --enable-gl-wayland 
+
+python waf build
+python waf install --destdir="$1"

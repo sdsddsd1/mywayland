@@ -1,0 +1,20 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+meson \
+	--prefix=/usr \
+	--buildtype=plain \
+	-Dexamples=false \
+        -Dlibcap=enabled \
+        -Dlogind=disabled \
+        -Dxcb-errors=disabled \
+        -Dxcb-icccm=disabled \
+        -Dxcb-xkb=disabled \
+        -Dxwayland=disabled \
+        -Dx11-backend=disabled \
+	-Dfreerdp=disabled \
+	. build
+
+ninja -C build
+ninja -C build install

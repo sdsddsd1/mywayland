@@ -1,0 +1,12 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+meson \
+	--prefix=/usr \
+	. build
+
+ninja -C build
+ninja -C build install
+
+chmod a+s "$1/usr/bin/swaylock"

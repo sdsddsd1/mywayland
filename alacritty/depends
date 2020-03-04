@@ -1,0 +1,8 @@
+cmake make
+fontconfig make
+libXcursor
+libXi
+libXrandr
+libxcb make 
+ncurses make
+rust make

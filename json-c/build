@@ -1,0 +1,11 @@
+#!/bin/sh -e
+
+
+./configure \
+	--prefix=/usr \
+	--enable-rdrand \
+	--enable-threading
+
+make
+
+make DESTDIR="$1" install

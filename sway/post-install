@@ -1,0 +1,3 @@
+#!/bin/sh
+
+setcap cap_sys_admin=eip /usr/bin/sway

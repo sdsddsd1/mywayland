@@ -1,0 +1,8 @@
+libcap
+libinput
+libxkbcommon
+mesa 
+meson make
+pixman
+samurai make
+wayland-protocols make

@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+export QT_SELECT=5
+
+qmake \
+	CONFIG+=wayland-compositor
+
+
+make
+make INSTALL_ROOT="$1" install

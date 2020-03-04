@@ -1,0 +1,28 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+meson \
+        --prefix=/usr \
+        -Dexamples=false \
+	-Dwerror=false \
+	-Db_ndebug=true \
+        . build
+
+ninja -C build
+ninja -C build install
+
+cat <<EOF
+
+### IMPORTANT ###
+### IMPORTANT ###
+
+For rootless sway, wlroots is compiled with libcap.
+Your user has to be in input and video groups.
+
+addgroup USERNAME video
+addgroup USERNAME input
+
+### IMPORTANT ###
+### IMPORTANT ###
+EOF

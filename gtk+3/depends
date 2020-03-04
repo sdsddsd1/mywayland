@@ -1,1 +1,14 @@
-/var/db/kiss/repo/extra/gtk+3/depends
+atk
+fribidi
+gdk-pixbuf
+libXcomposite
+libXcursor
+libXdamage
+libXext
+libXi
+libXinerama
+libXrandr
+libepoxy
+pango
+python make
+wayland-protocols

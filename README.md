@@ -1,10 +1,10 @@
-# KISSlinux compatible wayland repository.
+# KISSlinux compatible wayland repository
 
-## Wlroots + Sway.
+## Wlroots + Sway
 
 - Native waylandsession with:
 ```
-Alacritty, Bemenu, Falkon, SDL 3d and Vimb(webkit2).
+Alacritty, Bemenu, Falkon, Mpv, SDL3d and Vimb(webkit2).
 ```
 
 ```

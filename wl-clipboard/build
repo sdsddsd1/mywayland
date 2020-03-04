@@ -1,0 +1,13 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+meson \
+	--prefix=/usr \
+	. build
+
+ninja -C build
+ninja -C build install
+
+rm -rf "$1/usr/share/zsh/"
+rm -rf "$1/usr/share/bash-completion/"

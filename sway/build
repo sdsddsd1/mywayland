@@ -12,6 +12,13 @@ meson \
 ninja -C build
 ninja -C build install
 
+rm -rf "$1/usr/share/zsh/"
+rm -rf "$1/usr/share/wayland-sessions/"
+rm -rf "$1/usr/share/fish/"
+rm -rf "$1/usr/share/bash-completion/"
+
+
+
 cat <<EOF
 
 ### IMPORTANT ###

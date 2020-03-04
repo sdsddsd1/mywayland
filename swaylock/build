@@ -10,3 +10,8 @@ ninja -C build
 ninja -C build install
 
 chmod a+s "$1/usr/bin/swaylock"
+
+rm -rf "$1/usr/share/zsh/"
+rm -rf "$1/usr/share/fish/"
+rm -rf "$1/usr/share/bash-completion/"
+rm -rf "$1/etc/pam.d/"

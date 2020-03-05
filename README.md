@@ -15,6 +15,11 @@ FF is compiled with 'ac_add_options --enable-default-toolkit=cairo-gtk3-wayland'
 'MOZ_ENABLE_WAYLAND=1 firefox --no-remote'.
 ```
 
+```
+Tested with Intel graphics and intel-vaapi-driver
+```
+
+
 ## Variables for wayland.
 ```
 BEMENU_BACKEND=wayland

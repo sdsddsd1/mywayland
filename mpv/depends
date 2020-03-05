@@ -1,1 +1,10 @@
-/var/db/kiss/repo/extra/mpv/depends
+alsa-lib
+ffmpeg
+freetype-harfbuzz
+intel-vaapi-driver
+libass
+libXScrnSaver
+libXinerama
+libXrandr
+mesa
+python            make

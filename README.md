@@ -43,5 +43,6 @@ Just 'kiss b sway && kiss i sway' and KISS handles the rest.
 However when you migrate from an classical KISS Xorg installation some rebuilds are needed to
 pickup Wayland:
 gtk+3, intel-vaapi-driver, libav, mesa, mpv, sdl*, webkit2gtk. Maybe more.
+The repoduplicates which dont pickup Wayland automtically are added with modified buildfiles.
 Make sure to have KMS enabled.
 ```

@@ -16,7 +16,7 @@ sed -i 's/demos tests testsuite examples/tests/' Makefile.am Makefile.in
     --localstatedir=/var \
     --enable-xkb \
     --enable-xinerama \
-    --enable-xrandr \
+    --disable-xrandr \
     --enable-xfixes \
     --enable-xcomposite \
     --enable-xdamage \

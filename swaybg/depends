@@ -1,6 +1,6 @@
 cairo
-gdk-pixbuf2
+gdk-pixbuf
 meson make
-ninja make
+samurai make
 wayland
 wayland-protocols make

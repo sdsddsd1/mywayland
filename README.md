@@ -1,4 +1,4 @@
-# KISSlinux compatible wayland repository with wlroots and sway. 🌿
+# KISS repo for wayland with wlroots and sway. 🌿
 
 
 

@@ -1,1 +1,20 @@
-/var/db/kiss/repo/extra/mesa/depends
+bison        make
+expat
+flex         make
+libX11
+libXdamage
+libXext
+libXrandr
+libXrender
+libXxf86vm
+libdrm
+libelf
+libxcb
+libxshmfence
+llvm
+meson        make
+python       make
+wayland make
+wayland-protocols
+xorgproto
+zlib

@@ -1,6 +1,7 @@
 bison        make
 expat
 flex         make
+intel-vaapi-driver
 libX11
 libXdamage
 libXext

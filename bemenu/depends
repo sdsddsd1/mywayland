@@ -1,5 +1,6 @@
 cmake make
 pango
+libXinerama
 libxkbcommon make
 wayland make
 wlroots make

@@ -10,9 +10,9 @@ Alacritty, Bemenu, Mpv, SDL(Doom) and one of the following browsers.
 Vimb (webkit2gtk and gtk+3)works very well.
 Surf doesnt work due the lack of xprop.
 Falkon (QT5) works quite well(performance) but crashes now and then + buggy right-click but ok to use.
-Firefox 72.0.1 works somehow but I cant force the same hardware acceleration I do in X. Flickery on resizing.
+Firefox works good but is flickery on resizing. I cant force all the hardwareacceleration like in X.
 FF must be compiled with 'ac_add_options --enable-default-toolkit=cairo-gtk3-wayland' and to be started with
-'MOZ_ENABLE_WAYLAND=1 firefox --no-remote'.
+the launcher from this repo. Tested with version 72.0.1.
 ```
 
 ## Variables for wayland.

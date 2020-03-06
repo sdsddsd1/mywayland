@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+#
+# Run Firefox under Wayland
+#
+export MOZ_ENABLE_WAYLAND=1
+export vblank_mode=0
+export OZ_WEBRENDER=1
+export MOZ_ACCELERATED=1
+export vblank_mode=0
+
+exec /usr/bin/firefox "$@" --no-remote

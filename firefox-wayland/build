@@ -1,0 +1,3 @@
+#!/bin/sh -e
+
+install -Dm755 firefox-wayland "$1/usr/bin/firefox-wayland"

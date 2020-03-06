@@ -1,10 +1,10 @@
-# KISS repo for wayland with wlroots and sway. 🌿
+# KISS repo for wayland with wlroots and sway 🌿
 
 
 
-## Native rootless waylandsession with:
 ```
-Alacritty, Bemenu, Mpv, SDL(Doom) and one of the following browsers.
+Native rootless Wayland session with:
+Alacritty, Bemenu, Mpv, SDL(Doom), Sway and the following browsers.
 ```
 ```
 Vimb (webkit2gtk and gtk+3)works very well.
@@ -15,7 +15,7 @@ FF must be compiled with 'ac_add_options --enable-default-toolkit=cairo-gtk3-way
 the launcher from this repo. Tested with version 72.0.1.
 ```
 
-## Variables for wayland.
+## Compatibility variables
 ```
 BEMENU_BACKEND=wayland
 SDL_VIDEODRIVER=wayland
@@ -24,7 +24,7 @@ QT_QPA_PLATFORM=wayland-egl
 QT_WAYLAND_FORCE_DPI=physical
 ```
 
-## Wayland communication socket.
+## Wayland communication socket
 ```
 if test -z "${XDG_RUNTIME_DIR}"; then
     export XDG_RUNTIME_DIR=/tmp/${UID}-runtime-dir
@@ -35,7 +35,7 @@ if test -z "${XDG_RUNTIME_DIR}"; then
 fi
 ```
 
-## Migration to Wayland
+## Migration
 ```
 When you start a fresh install there *should* be no extra intervention.
 Just 'kiss b sway && kiss i sway' and KISS handles the rest.

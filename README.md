@@ -6,7 +6,7 @@ Falkon (QT5) works quite well(performance) but crashes now and then + buggy righ
 Firefox works good but is flickery on resizing. I cant force all the hardwareacceleration like in X.
 FF must be compiled with 'ac_add_options --enable-default-toolkit=cairo-gtk3-wayland' and to be started with
 the launcher from this repo. Tested with version 72.0.1.
-SDL games (Doom) run like normal.
+SDL games Crispy Doom, Doomretro and Xonotic working well. Sauerbraten does not work.
 ```
 
 ## Compatibility variables

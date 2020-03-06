@@ -1,4 +1,4 @@
-# Native Wayland and root-less Sway 🌿 for KISS
+# Native Wayland and root-less Sway for KISS 🌿
 ```
 Vimb (webkit2gtk and gtk+3)works very well.
 Surf does not work due the lack of xprop?

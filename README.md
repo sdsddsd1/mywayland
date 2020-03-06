@@ -32,7 +32,7 @@ fi
 ## Migration
 ```
 Starting of a fresh xorg-less KISS, installation *should* be as easy as
-'kiss b sway && kiss i sway' without any further intervention
+'kiss b sway && kiss i sway' without any further intervention.
 
 However when you come over from Xorg KISS, some rebuilds may be rquired
 in order to pickup Wayland:

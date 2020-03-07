@@ -1,7 +1,5 @@
 #!/bin/sh -e
 
-export QT_SELECT=5
-
 qmake \
 	CONFIG+=wayland-compositor
 

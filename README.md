@@ -7,7 +7,7 @@ Firefox works good but is flickery on resizing. I cant force all the hardwareacc
 Fork Firefox and add 'ac_add_options --enable-default-toolkit=cairo-gtk3-wayland' to mozzconfig.
 There is a launcher with Wayland specific variables. Tested with ESR and 72.0.1.
 SDL games Crispy Doom, Doomretro and Xonotic working well. Sauerbraten does not work.
-Tests done with udev and Intel graphics.
+Tests done with Intel graphics.
 ```
 
 ## Compatibility variables

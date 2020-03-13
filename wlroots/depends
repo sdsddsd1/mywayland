@@ -7,3 +7,4 @@ meson make
 pixman
 samurai make
 wayland-protocols make
+xkeyboard-config

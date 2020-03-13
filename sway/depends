@@ -9,4 +9,3 @@ samurai make
 wayland
 wayland-protocols make
 wlroots
-xkeyboard-config

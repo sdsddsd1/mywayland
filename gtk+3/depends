@@ -11,4 +11,5 @@ libXrandr
 libepoxy
 pango
 python make
+wayland
 wayland-protocols

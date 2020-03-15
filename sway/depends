@@ -1,4 +1,5 @@
 cairo
+flex make
 gdk-pixbuf
 json-c
 libcap

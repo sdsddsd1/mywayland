@@ -25,10 +25,9 @@ cat <<EOF
 ### IMPORTANT ###
 
 For rootless sway, wlroots is compiled with libcap.
-Your user has to be in input and video groups.
+Your user has to be in the video group.
 
 addgroup USERNAME video
-addgroup USERNAME input
 
 ### IMPORTANT ###
 ### IMPORTANT ###

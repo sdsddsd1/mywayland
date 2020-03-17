@@ -1,5 +1,5 @@
 #!/bin/sh
 
-chown :input				"$KISS_ROOT/usr/bin/sway"
-chmod g+s					"$KISS_ROOT/usr/bin/sway"
-setcap cap_sys_admin=eip	"$KISS_ROOT/usr/bin/sway"
+chown :input              "$KISS_ROOT/usr/bin/sway"
+chmod g+s                 "$KISS_ROOT/usr/bin/sway"
+setcap cap_sys_admin=eip  "$KISS_ROOT/usr/bin/sway"

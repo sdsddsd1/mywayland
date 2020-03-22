@@ -8,6 +8,7 @@ Fork Firefox and add 'ac_add_options --enable-default-toolkit=cairo-gtk3-wayland
 There is a launcher with Wayland specific variables. Tested with ESR and 72.0.1.
 SDL games Crispy Doom, Doomretro and Xonotic working well. Sauerbraten does not work.
 Tests done with Intel graphics.
+Eudev dependency for Wlroots!
 ```
 
 ## Compatibility variables

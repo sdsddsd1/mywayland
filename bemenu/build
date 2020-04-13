@@ -1,14 +1,5 @@
 #!/bin/sh -e
 
-export DESTDIR="$1"
+make PREFIX=/usr
 
-cmake -B build \
-	-DCMAKE_BUILD_TYPE=RelWithDebInfo \
-	-DCMAKE_INSTALL_PREFIX=/usr \
-	-DCMAKE_INSTALL_LIBDIR=/usr/lib \
-	-DBEMENU_WAYLAND_RENDERER=ON \
-	-DBEMENU_X11_RENDERER=OFF \
-	-DBEMENU_CURSES_RENDERER=OFF
-
-cmake --build 	build
-cmake --install build
+make PREFIX=/usr DESTDIR="$1" install

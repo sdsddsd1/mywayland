@@ -1,5 +1,19 @@
 #!/bin/sh
 
-chown :input              "$KISS_ROOT/usr/bin/sway"
-chmod g+s                 "$KISS_ROOT/usr/bin/sway"
-setcap cap_sys_admin=eip  "$KISS_ROOT/usr/bin/sway"
+chmod u+s    "$KISS_ROOT/usr/bin/sway"
+
+cat <<EOF
+
+### IMPORTANT ###
+### IMPORTANT ###
+
+Sway is build with suid bit (chmod u+s).
+Your user has to be in the video group.
+
+addgroup USERNAME video
+
+addgroup USERNAME input
+
+### IMPORTANT ###
+### IMPORTANT ###
+EOF

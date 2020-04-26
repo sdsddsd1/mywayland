@@ -3,11 +3,10 @@
 export DESTDIR="$1"
 
 meson \
-        --prefix=/usr \
-        -Dexamples=false \
-	-Dwerror=false \
-	-Db_ndebug=true \
-        . build
+    --prefix=/usr \
+    --buildtype=plain \
+    -Dexamples=false \
+    . build
 
 ninja -C build
 ninja -C build install
@@ -16,19 +15,3 @@ rm -rf "$1/usr/share/zsh/"
 rm -rf "$1/usr/share/wayland-sessions/"
 rm -rf "$1/usr/share/fish/"
 rm -rf "$1/usr/share/bash-completion/"
-
-
-
-cat <<EOF
-
-### IMPORTANT ###
-### IMPORTANT ###
-
-For rootless sway, wlroots is compiled with libcap.
-Your user has to be in the video group.
-
-addgroup USERNAME video
-
-### IMPORTANT ###
-### IMPORTANT ###
-EOF

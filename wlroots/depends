@@ -1,6 +1,5 @@
 eudev
 flex make
-libcap
 libinput
 libxkbcommon
 mesa 

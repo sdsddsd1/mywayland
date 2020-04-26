@@ -6,7 +6,7 @@ meson \
 	--prefix=/usr \
 	--buildtype=plain \
 	-Dexamples=false \
-        -Dlibcap=enabled \
+        -Dlibcap=disabled \
         -Dlogind=disabled \
         -Dxcb-errors=disabled \
         -Dxcb-icccm=disabled \

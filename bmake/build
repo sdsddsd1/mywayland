@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+./boot-strap --prefix=/usr op=build
+
+./boot-strap --install-destdir="$1" --prefix=/usr op=install

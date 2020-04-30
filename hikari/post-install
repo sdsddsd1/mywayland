@@ -1,0 +1,19 @@
+#!/bin/sh
+
+chmod u+s    "$KISS_ROOT/usr/bin/hikari"
+
+cat <<EOF
+
+### IMPORTANT ###
+### IMPORTANT ###
+
+Sway is build with suid bit (chmod u+s).
+Your user has to be in the video and input group.
+
+addgroup USERNAME video
+
+addgroup USERNAME input
+
+### IMPORTANT ###
+### IMPORTANT ###
+EOF

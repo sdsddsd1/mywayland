@@ -1,4 +1,4 @@
-# Native Wayland session with Sway for KISS 🌿
+# Native experimental Wayland session with Sway and Hikari for KISS 🌿
 ```
 Vimb (Webkit2gtk and Gtk+3)works very well.
 Surf does not work due the lack of Xprop?

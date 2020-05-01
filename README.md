@@ -3,14 +3,13 @@
 Vimb (Webkit2gtk and Gtk+3)works very well.
 Surf does not work due the lack of Xprop?
 Falkon (QT5) works quite well(performance) but crashes now and then + buggy right-click. Ok to use.
-Firefox works good but is flickery on resizing. I cant force all the hardwareacceleration like in X.
-Fork Firefox and add 'ac_add_options --enable-default-toolkit=cairo-gtk3-wayland' to mozzconfig.
-There is a launcher with Wayland specific variables. Tested with ESR and 72.0.1.
+Firefox75 works very well. Comes with vaapi support.
+There is a launcher with Wayland specific variables.
 SDL games Crispy Doom, Doomretro and Xonotic working well. Sauerbraten does not work.
 Tests done with Intel graphics.
 Eudev dependency for Wlroots!
-Sway is build with suid bit. This seems to be commonly used next to elogind, but it´s not considered 100% ideal.  
-The capability method got abandoned in this repo because of questionable security.
+Sway/Hikari are build with suid bit. This seems to be commonly used next to elogind, but it´s not considered 100% ideal.  
+The capability method got abandoned because of questionable security.
 If you have ideas on how to improve the situation, get in touch.
 ```
 

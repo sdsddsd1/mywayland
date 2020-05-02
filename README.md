@@ -1,4 +1,4 @@
-# Native experimental Wayland session with Sway and Hikari for KISS 🌿
+# Native experimental Wayland session with Sway and hikari for KISS 🌿
 ```
 Vimb (Webkit2gtk and Gtk+3)works very well.
 Surf does not work due the lack of Xprop?
@@ -8,7 +8,7 @@ There is a launcher with Wayland specific variables.
 SDL games Crispy Doom, Doomretro and Xonotic working well. Sauerbraten does not work.
 Tests done with Intel graphics.
 Eudev dependency for Wlroots!
-Sway/Hikari are build with suid bit. This seems to be commonly used next to elogind, but it´s not considered 100% ideal.  
+Sway/hikari are build with suid bit. This seems to be commonly used next to elogind, but it´s not considered 100% ideal.  
 The capability method got abandoned because of questionable security.
 If you have ideas on how to improve the situation, get in touch.
 ```

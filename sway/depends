@@ -2,7 +2,6 @@ cairo
 flex make
 gdk-pixbuf
 json-c
-libcap
 meson make
 pango
 pcre

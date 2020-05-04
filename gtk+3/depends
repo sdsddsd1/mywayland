@@ -9,6 +9,7 @@ libXi
 libXinerama
 libXrandr
 libepoxy
+libxkbcommon
 pango
 python make
 wayland

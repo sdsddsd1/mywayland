@@ -10,7 +10,7 @@ Tests done with Intel graphics.
 Eudev dependency for Wlroots!
 Sway/hikari are build with suid bit. This seems to be commonly used next to elogind, but it´s not considered 100% ideal.  
 The capability method got abandoned because of questionable security.
-If you have ideas on how to improve the situation, get in touch.
+If you have ideas on how to improve the situation, get in touch. 
 ```
 
 ## Compatibility variables

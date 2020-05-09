@@ -1,5 +1,8 @@
 #!/bin/sh -e
 
+#GCC10 fix
+export CFLAGS="$CFLAGS -fcommon"
+
 ./boot-strap --prefix=/usr op=build
 
 ./boot-strap --install-destdir="$1" --prefix=/usr op=install

@@ -13,9 +13,6 @@ Sway/hikari are build with suid bit. This seems to be commonly used next to elog
 The capability method got abandoned because of questionable security.
 If you have ideas on how to improve the situation, get in touch. 
 ```
-[mvi - view images in mpv](https://github.com/occivink/mpv-image-viewer)  
-[wyeb](https://github.com/jun7/wyeb)  
-[Surfer](https://github.com/nihilowy/surfer) 
 
 ## NoXwayland
 ```
@@ -58,3 +55,9 @@ gtk+3, intel-vaapi-driver, libav, mesa, mpv, sdl*, webkit2gtk. Maybe more.
 Packages which dont pickup Wayland automtically are added with modified buildfiles.
 Make sure to have KMS enabled.
 ```
+
+## Links
+- [mvi - view images in mpv](https://github.com/occivink/mpv-image-viewer)  
+- [Surfer](https://github.com/nihilowy/surfer) 
+- [wyeb](https://github.com/jun7/wyeb)  
+

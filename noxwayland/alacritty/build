@@ -1,0 +1,8 @@
+#!/bin/sh -e
+
+(
+cd alacritty
+cargo build --release --no-default-features --features wayland
+)
+
+install -Dm755 target/release/alacritty "$1/usr/bin/alacritty"

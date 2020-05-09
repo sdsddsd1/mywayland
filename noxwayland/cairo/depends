@@ -1,0 +1,7 @@
+fontconfig
+glib
+libffi
+libpng
+mesa
+pixman
+zlib

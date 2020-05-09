@@ -1,0 +1,4 @@
+cmake make
+fontconfig make
+ncurses make
+rust make

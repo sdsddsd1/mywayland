@@ -1,0 +1,8 @@
+atk
+fribidi
+gdk-pixbuf
+libepoxy
+pango
+python make
+wayland
+wayland-protocols

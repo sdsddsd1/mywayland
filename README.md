@@ -15,10 +15,11 @@ If you have ideas on how to improve the situation, get in touch.
 ## NoXwayland
 ```
 Noxwayland is an approach to ditch as many X dependencies as possible.  
-Currently only `libxkbcommon` and `xkeyboard-config` are needed but performance in  
-webkit2gtk is significantly worse. Wyeb and Surfer are working examples.
+At least `libxkbcommon` and `xkeyboard-config` are needed but performance in  
+webkit2gtk is significantly worse. Wyeb and Surfer are working examples.  
+More investigation is needed to find out which libraries are required by `mesa` to get a reasonable performance.  
 I was not yet able to build gtk+2 without X so no further testing regarding firefox. When this is possible at all.  
-*As gtk+2 is only a build time dependency it can be removed after the build together with its dependecies.
+*As gtk+2 is only required at build time, it can be removed together with its dependencies afterwards.
 ```
 [Wyeb](https://github.com/jun7/wyeb)  
 [Surfer](https://github.com/nihilowy/surfer) 

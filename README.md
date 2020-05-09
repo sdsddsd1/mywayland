@@ -1,10 +1,11 @@
 # Native experimental Wayland session with Sway and hikari for KISS 🌿
 ```
-Vimb (Webkit2gtk and Gtk+3)works very well.
-Surf does not work due the lack of Xprop?
+Vimb, Surfer and Wyeb(Webkit2gtk and Gtk+3) are working very well.
+Surf does not work.
 Falkon (QT5) works quite well(performance) but crashes now and then + buggy right-click. Ok to use.
 Firefox75 works very well. Comes with vaapi support.
 There is a launcher with Wayland specific variables.
+Mpv can be extended through some scripts to act as an image viewer.
 SDL games Crispy Doom, Doomretro and Xonotic working well. Sauerbraten does not work.
 Tests done with Intel graphics.
 Eudev dependency for Wlroots!
@@ -12,6 +13,10 @@ Sway/hikari are build with suid bit. This seems to be commonly used next to elog
 The capability method got abandoned because of questionable security.
 If you have ideas on how to improve the situation, get in touch. 
 ```
+[mvi - view images in mpv](https://github.com/occivink/mpv-image-viewer)  
+[wyeb](https://github.com/jun7/wyeb)  
+[Surfer](https://github.com/nihilowy/surfer) 
+
 ## NoXwayland
 ```
 Noxwayland is an approach to ditch as many X dependencies as possible.  
@@ -21,9 +26,7 @@ More investigation is needed to find out which libraries are required by `mesa` 
 I was not yet able to build gtk+2 without X so no further testing regarding firefox. When this is possible at all.  
 *As gtk+2 is only required at build time, it can be removed together with its dependencies afterwards.
 ```
-[Wyeb](https://github.com/jun7/wyeb)  
-[Surfer](https://github.com/nihilowy/surfer) 
-
+ 
 ## Compatibility variables
 ```
 BEMENU_BACKEND=wayland

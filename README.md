@@ -14,9 +14,9 @@ The capability method got abandoned because of questionable security.
 If you have ideas on how to improve the situation, get in touch. 
 ```
 
-## NoXwayland
+## NoXland
 ```
-Noxwayland is an approach to ditch as many X dependencies as possible.  
+NoXland is an approach to ditch as many X dependencies as possible.  
 At least `libxkbcommon` and `xkeyboard-config` are needed but performance in  
 webkit2gtk is significantly worse. Wyeb and Surfer are working examples.  
 More investigation is needed to find out which libraries are required by `mesa` to get a reasonable performance.  

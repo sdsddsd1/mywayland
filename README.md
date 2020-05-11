@@ -24,7 +24,7 @@ More investigation is needed to find out which libraries are required by `mesa` 
 I was not yet able to build gtk+2 without X so no further testing regarding firefox. When this is possible at all.  
 *As gtk+2 is only required at build time, it can be removed together with its dependencies afterwards.
 ```
-Baseinstall + noxwayland + webkit2gtk + mpv + vaapi + doomretro: `kiss l | wc -l` ~ `110`
+base + noXland + webkit2gtk + mpv + vaapi + doomretro:   `kiss l | wc -l` ~ `110`
  
 ## Compatibility variables
 ```

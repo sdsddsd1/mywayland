@@ -1,7 +1,0 @@
-#!/bin/sh -e
-
-sed -i 's/all: hikari hikari-unlocker/all: hikari/g' Makefile
-
-bmake WITH_POSIX_C_SOURCE=YES
-
-install -Dm755 hikari "$1/usr/bin/hikari"

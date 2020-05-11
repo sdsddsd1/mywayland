@@ -17,7 +17,7 @@ If you have ideas on how to improve the situation, get in touch.
 ## NoXland
 ```
 NoXland is an approach to ditch as many X dependencies as possible.  
-For a graphical base system, at least `libxkbcommon` and `xkeyboard-config`.  
+For a graphical base system, at least `libxkbcommon` and `xkeyboard-config` are required.  
 For webkit2gtk `libXslt` is needed. Performance is not as good, but ok. Gstreamer is working significantly worse.  
 Wyeb and Surfer are working examples. Mpv and VAAPI is no difference.  
 More investigation is needed to find out which libraries are required by `mesa` to get a reasonable performance.  

@@ -25,7 +25,6 @@
 
 export PYTHONPATH
 export DESTDIR="$1"
-export CFLAGS="$CFLAGS -fcommon"
 
 # Fix issues with musl and firefox.
 # https://bugs.freedesktop.org/show_bug.cgi?id=35268
@@ -38,13 +37,13 @@ meson \
     --mandir=/usr/share/man \
     --localstatedir=/var \
     --buildtype=release \
-    -Dplatforms=drm,wayland \
-	-Ddri-drivers=i965 \
-    -Dgallium-drivers=i915 \
-    -Dvulkan-drivers=intel \
-    -Dglx=disabled \
+    -Dplatforms=wayland,drm \
     -Dgles1=true \
     -Dgles2=true \
+    -Degl=true \
+    -Dgallium-egl=true \
+    -Dshared-glapi=true \
+    -Dglx=disabled \
     . output
 
 ninja -C output

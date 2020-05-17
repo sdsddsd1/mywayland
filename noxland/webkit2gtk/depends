@@ -13,3 +13,4 @@ perl   make
 python make
 ruby   make
 sqlite
+wpebackend-fdo

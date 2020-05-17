@@ -17,8 +17,9 @@ If you have ideas on how to improve the situation, get in touch.
 ## NoXland
 ```
 NoXland is an approach to ditch as many X dependencies as possible. It utilizes `libglvnd` through mesa  
-to provide `libgl.so`. That being said we have hardware accelerated webkit2gtk through wpebackend-fdo  
-with only libX11 and libXext and its respective dependencies!
+to provide `libgl.so`which normaly comes from X through glx. 
+That being said we have hardware accelerated webkit2gtk through wpebackend-fdo with only libX11  
+and libXext and its respective dependencies!
 
 Notes:
 For a graphical base system, at least `libxkbcommon` and `xkeyboard-config` are required but unaccelerated  

@@ -3,7 +3,7 @@ expat
 flex         make
 libdrm
 libelf
-llvm
+libglvnd
 meson        make
 python       make
 wayland

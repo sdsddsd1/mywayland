@@ -38,11 +38,7 @@ meson \
     --localstatedir=/var \
     --buildtype=release \
     -Dplatforms=wayland,drm \
-    -Dgles1=true \
-    -Dgles2=true \
-    -Degl=true \
-    -Dgallium-egl=true \
-    -Dshared-glapi=true \
+    -Dglvnd=true \
     -Dglx=disabled \
     . output
 

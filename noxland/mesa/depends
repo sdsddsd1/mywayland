@@ -4,6 +4,7 @@ flex         make
 libdrm
 libelf
 libglvnd
+llvm
 meson        make
 python       make
 wayland

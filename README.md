@@ -16,16 +16,16 @@ If you have ideas on how to improve the situation, get in touch.
 
 ## NoXland
 ```
-NoXland is an approach to ditch as many X dependencies as possible.  
-For a graphical base system, at least `libxkbcommon` and `xkeyboard-config` are required.  
-For webkit2gtk `libXslt` is needed. Performance is not as good, but ok. Gstreamer is working significantly worse.  
-Wyeb and Surfer are working examples. Mpv and VAAPI is no difference.  
-With the aforementioned libraries, glx is not possible and theirfore no opengl? with `libgl.so`. We want this very badly,  
-because than we can build webkit2gtk with hardware acceleration!(libwpe and wpebackend-fdo)
+NoXland is an approach to ditch as many X dependencies as possible. It utilizes `libglvnd` through mesa  
+to provide `libgl.so`. That being said we have hardware accelerated webkit2gtk through wpebackend-fdo  
+with only libX11 and libXext and its respective dependencies!
+
+Notes:
+For a graphical base system, at least `libxkbcommon` and `xkeyboard-config` are required but unaccelerated  
+webkit2gtk and very bad gstreamer performance. `Glvnd` has to be disabled in mesa.
 I was not yet able to build gtk+2 without X so no further testing regarding firefox. When this is possible at all.  
 *As gtk+2 is only required at build time, it can be removed together with its dependencies afterwards.
 ```
-base + noXland + webkit2gtk + mpv + vaapi + doomretro:   `kiss l | wc -l` ~ `110`
  
 ## Compatibility variables
 ```

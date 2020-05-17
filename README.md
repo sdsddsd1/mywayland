@@ -9,7 +9,8 @@ Mpv can be extended through some scripts to act as an image viewer.
 SDL games Crispy Doom, Doomretro and Xonotic working well. Sauerbraten does not work.
 Tests done with Intel graphics.
 Eudev dependency for Wlroots!
-Sway/hikari are build with suid bit. This seems to be commonly used next to elogind, but it´s not considered 100% ideal.  
+Sway/hikari are build with suid bit. This seems to be commonly used next to elogind but  
+this is not considered 100% ideal.  
 The capability method got abandoned because of questionable security.
 If you have ideas on how to improve the situation, get in touch. 
 ```
@@ -18,13 +19,15 @@ If you have ideas on how to improve the situation, get in touch.
 ```
 NoXland is an approach to ditch as many X dependencies as possible. It utilizes `libglvnd` through mesa  
 to provide `libgl.so`which normaly comes from X through glx. 
-That being said we have hardware accelerated webkit2gtk through wpebackend-fdo with only libX11  
-and libXext and its respective dependencies!
+We have hardware accelerated webkit2gtk through wpebackend-fdo and good gstreamer performance  
+with the following X dependencies:  
+libX11 libXau libXext libXslt libxcb libxkbcommon xcb-proto xkeyboard-config xorgproto
 
 Notes:
-For a graphical base system, at least `libxkbcommon` and `xkeyboard-config` are required but unaccelerated  
-webkit2gtk and very bad gstreamer performance. `Glvnd` has to be disabled in mesa.
-I was not yet able to build gtk+2 without X so no further testing regarding firefox. When this is possible at all.  
+For a graphical base system, at least `libxkbcommon` and `xkeyboard-config` are required but  
+unaccelerated webkit2gtk and very bad gstreamer performance. `Glvnd` has to be disabled in mesa.
+I was not yet able to build gtk+2 without X so no further testing regarding firefox.  
+When this is possible at all.  
 *As gtk+2 is only required at build time, it can be removed together with its dependencies afterwards.
 ```
  

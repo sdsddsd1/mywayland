@@ -26,9 +26,7 @@ libX11 libXau libXext libXslt libxcb libxkbcommon xcb-proto xkeyboard-config xor
 Notes:
 For a graphical base system, at least `libxkbcommon` and `xkeyboard-config` are required but  
 unaccelerated webkit2gtk and very bad gstreamer performance. `Glvnd` has to be disabled in mesa.
-I was not yet able to build gtk+2 without X so no further testing regarding firefox.  
-When this is possible at all.  
-*As gtk+2 is only required at build time, it can be removed together with its dependencies afterwards.
+Firefox needs gtk+3 with X11 backend enabled to build. Same goes for vimb.
 ```
  
 ## Compatibility variables

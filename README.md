@@ -3,7 +3,7 @@
 Vimb, Surfer and Wyeb(Webkit2gtk and Gtk+3) are working very well.
 Surf does not work.
 Falkon (QT5) works quite well(performance) but crashes now and then + buggy right-click. Ok to use.
-Firefox75 works very well. Comes with vaapi support.
+Firefox75 works very well. Comes with vaapi support. v76 has vaapi problems.
 There is a launcher with Wayland specific variables.
 Mpv can be extended through some scripts to act as an image viewer.
 SDL games Crispy Doom, Doomretro and Xonotic working well. Sauerbraten does not work.

@@ -4,6 +4,7 @@ flex         make
 libdrm
 libelf
 libglvnd
+linux-headers make
 llvm
 meson        make
 python       make

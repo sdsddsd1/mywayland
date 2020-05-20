@@ -2,6 +2,7 @@ cairo
 flex make
 gdk-pixbuf
 json-c
+linux-headers make
 meson make
 pango
 pcre

@@ -4,6 +4,7 @@ glib
 libinput
 libucl
 libxkbcommon
+linux-headers make
 pango
 pixman
 wlroots

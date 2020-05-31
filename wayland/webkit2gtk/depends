@@ -5,6 +5,7 @@ gperf  make
 gtk+3
 harfbuzz-icu
 libXslt
+libXt
 libgcrypt
 libsoup
 libwebp

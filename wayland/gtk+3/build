@@ -1,5 +1,8 @@
 #!/bin/sh -e
 
+# Enable wayland backend if wayland is installed.
+kiss l wayland-protocols && wayland=enable
+
 # Remove 'atk-bridge' dependency which removes the 'dbus' dependency.
 sed -i 's/ATK_PACKAGES="atk atk-bridge-2.0"/ATK_PACKAGES="atk"/' \
     configure
@@ -17,18 +20,19 @@ sed -i 's/docs m4macros/m4macros/'          Makefile.am Makefile.in
     --localstatedir=/var \
     --enable-xkb \
     --enable-xinerama \
-    --disable-xrandr \
+    --enable-xrandr \
     --enable-xfixes \
     --enable-xcomposite \
     --enable-xdamage \
-    --enable-wayland-backend \
     --enable-x11-backend \
+    --${wayland:-disable}-wayland-backend \
     --enable-debug=no \
     --disable-schemas-compile \
     --disable-cups \
     --disable-papi \
     --disable-cloudprint \
     --disable-glibtest \
+    --disable-nls \
     --disable-installed-tests \
     --enable-introspection=no \
     --enable-colord=no \
@@ -36,3 +40,8 @@ sed -i 's/docs m4macros/m4macros/'          Makefile.am Makefile.in
 
 make
 make DESTDIR="$1" install
+
+# We don't compile with librsvg which leads to this
+# utility solely causing compiler errors for some
+# packages. It has no use at all.
+rm -f "$1/usr/bin/gtk-encode-symbolic-svg"

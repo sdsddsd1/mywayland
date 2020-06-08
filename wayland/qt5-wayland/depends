@@ -1,3 +1,4 @@
 libXcomposite
+perl make
 qt5-declarative
 wayland

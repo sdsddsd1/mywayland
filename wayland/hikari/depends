@@ -8,4 +8,5 @@ linux-headers make
 pango
 pixman
 wlroots
+wayland-protocols make
 wayland

@@ -1,11 +1,11 @@
-# Native experimental Wayland session with Sway and hikari for KISS 🌿
-```
-Tests done with Intel graphics.
-Eudev dependency for Wlroots!
-Sway/hikari/Cagebreak are build with suid bit. This seems to be commonly used
-next to elogind but this is not considered 100% ideal. 
-The capability method got abandoned because of questionable security.
-```
+# Native experimental Wayland session for KISS 🌿
+
+Tests done with Intel graphics.  
+Eudev dependency for Wlroots!  
+Sway/hikari/Cagebreak are build with suid bit. This seems to be commonly used  
+next to elogind but is not considered 100% ideal.   
+The capability method got abandoned because of questionable security.  
+
 
 ## NoXland
 
@@ -29,12 +29,11 @@ NOTE: Some browser like `surfer` and `wyeb` come along with gtk+3 and wayland
       backend only. Vimb e.g. requieres also the Xorg backend. My smallest X-  
       and wayland backend enabled gtk+3 build needs the following. Just disable  
       everything with a "X". There may be more requiered at build time.  
-      'libX11' 'libXau' 'libXext' 'libXi' 'libxcb'  
+      `libX11` `libXau` `libXext` `libXi` `libxcb`  
       
-For Firefox `libglvnd` aswell as the X11 backend for gtk+3 is requiered. The  
-dependencies can be shrunk but while there is no option yet to disable the X11  
+For Firefox, `libglvnd` aswell as the X11 backend for gtk+3 is requiered. The  
+dependencies can be shrunk, but while there is no option yet to disable the X11  
 backend, the efforts are low on reward. The follwing can be ditched:  
-
 `libXinerama` `libXxf86vm` `libxshmfence`  
  
 ## Compatibility variables
@@ -74,5 +73,5 @@ Make sure to have KMS enabled.
 - [Surfer](https://github.com/nihilowy/surfer) 
 - [wyeb](https://github.com/jun7/wyeb)  
 - [jsml](https://github.com/troysung/jsml)  
-- [Crusta](https://github.com/Tarptaeya/Crusta
+- [Crusta](https://github.com/Tarptaeya/Crusta)
 

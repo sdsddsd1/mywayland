@@ -1,32 +1,43 @@
 # Native experimental Wayland session with Sway and hikari for KISS 🌿
 ```
-Vimb, Surfer and Wyeb(Webkit2gtk and Gtk+3) are working very well.
-Surf does not work.
-Falkon (QT5) works quite well(performance) but crashes now and then + buggy right-click. Ok to use.
-Firefox75 works very well. Comes with vaapi support. v76 has vaapi problems.
-There is a launcher with Wayland specific variables.
-Mpv can be extended through some scripts to act as an image viewer.
-SDL games Crispy Doom, Doomretro and Xonotic working well. Sauerbraten does not work.
 Tests done with Intel graphics.
 Eudev dependency for Wlroots!
-Sway/hikari are build with suid bit. This seems to be commonly used next to elogind but  
-this is not considered 100% ideal.  
+Sway/hikari/Cagebreak are build with suid bit. This seems to be commonly used
+next to elogind but this is not considered 100% ideal. 
 The capability method got abandoned because of questionable security.
-If you have ideas on how to improve the situation, get in touch. 
 ```
 
 ## NoXland
 ```
-NoXland is an approach to ditch as many X dependencies as possible. It utilizes `libglvnd` through mesa  
-to provide `libgl.so`which normaly comes from X through glx. 
-We have hardware accelerated webkit2gtk through wpebackend-fdo and good gstreamer performance  
-with the following X dependencies:  
-libX11 libXau libXext libXslt libxcb libxkbcommon xcb-proto xkeyboard-config xorgproto
+NoXland is an approach to ditch as many X dependencies as possible. While 
+`libxkbcommon` and `xkeyboard-config` are the minimum requiered for qt5 and
+webkit2gtk based browsers, firefox needs a lot more.
+Qt5 browsers like `viper-browser`, ´Crusta` and `jsml` are tested well and
+just need their qt dependencies to behave performance wise like a conventional
+X build.
+On the webkit2gtk side of things the performance, espacially on heavy sites, is
+very poor. This can be improved by coupling mesa with `libglvnd` to provide a so
+called vendor neutral libgl.so which makes webkit2gtk play much nicer. When
+there is a "libgl.so", `opengl` alongside with the wayland only `wpebackend-fdo`
+for hardware accelerated rendering can be enabled.
 
-Notes:
-For a graphical base system, at least `libxkbcommon` and `xkeyboard-config` are required but  
-unaccelerated webkit2gtk and very bad gstreamer performance. `Glvnd` has to be disabled in mesa.
-Firefox needs gtk+3 with X11 backend enabled to build. Same goes for vimb.
+NOTE: A libglvnd based build requieres:
+      ```libX11 libXau libXext libXslt libxcb libxkbcommon xcb-proto
+      xkeyboard-config xorgproto```
+
+NOTE: Some browser like `surfer` and `wyeb` come along with gtk+3 and wayland
+      backend only. Vimb e.g. requieres also the Xorg backend. My smallest X-
+      and wayland backend enabled gtk+3 build needs the following(just disable
+      everything with a "X"):
+      'libX11' 'libXau' 'libXext' 'libXi' 'libxcb'
+      
+      NOTE: There may be more requiered at build time.
+
+For Firefox `libglvnd` aswell as the X11 backend for gtk+3 is requiered. The
+dependencies can be shrunk but while there is no option yet to disable the X11
+backend, the efforts are low on reward. The follwing can be ditched:
+
+`libXinerama` `libXxf86vm` `libxshmfence`
 ```
  
 ## Compatibility variables
@@ -65,4 +76,6 @@ Make sure to have KMS enabled.
 - [mvi - view images in mpv](https://github.com/occivink/mpv-image-viewer)  
 - [Surfer](https://github.com/nihilowy/surfer) 
 - [wyeb](https://github.com/jun7/wyeb)  
+- [jsml](https://github.com/troysung/jsml)  
+- [Crusta](https://github.com/Tarptaeya/Crusta
 

@@ -1,0 +1,15 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+ meson \
+    --prefix=/usr \
+    --libdir=lib \
+    --buildtype=release \
+    -Dxwayland=false \
+    -Dexample=false \
+    -Ddoc=false \
+     . output
+
+ ninja -C output
+ ninja -C output install

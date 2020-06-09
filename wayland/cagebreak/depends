@@ -1,0 +1,6 @@
+libxkbcommon
+meson make
+pandoc-bin make
+pango
+wayland-protocols make
+wayland

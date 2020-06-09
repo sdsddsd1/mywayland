@@ -12,6 +12,7 @@ The capability method got abandoned because of questionable security.
 NoXland is an approach to ditch as many X dependencies as possible. While  
 `libxkbcommon` and `xkeyboard-config` are the minimum requiered for qt5 and  
 webkit2gtk based browsers, firefox needs a lot more.  
+
 Qt5 browsers like `viper-browser`, `Crusta` and `jsml` are tested well and  
 just need their qt dependencies to behave performance wise like a conventional  
 X build.  

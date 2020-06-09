@@ -8,37 +8,34 @@ The capability method got abandoned because of questionable security.
 ```
 
 ## NoXland
-```
-NoXland is an approach to ditch as many X dependencies as possible. While 
-`libxkbcommon` and `xkeyboard-config` are the minimum requiered for qt5 and
-webkit2gtk based browsers, firefox needs a lot more.
-Qt5 browsers like `viper-browser`, ´Crusta` and `jsml` are tested well and
-just need their qt dependencies to behave performance wise like a conventional
-X build.
-On the webkit2gtk side of things the performance, espacially on heavy sites, is
-very poor. This can be improved by coupling mesa with `libglvnd` to provide a so
-called vendor neutral libgl.so which makes webkit2gtk play much nicer. When
-there is a "libgl.so", `opengl` alongside with the wayland only `wpebackend-fdo`
-for hardware accelerated rendering can be enabled.
 
-NOTE: A libglvnd based build requieres:
-      ```libX11 libXau libXext libXslt libxcb libxkbcommon xcb-proto
-      xkeyboard-config xorgproto```
+NoXland is an approach to ditch as many X dependencies as possible. While  
+`libxkbcommon` and `xkeyboard-config` are the minimum requiered for qt5 and  
+webkit2gtk based browsers, firefox needs a lot more.  
+Qt5 browsers like `viper-browser`, `Crusta` and `jsml` are tested well and  
+just need their qt dependencies to behave performance wise like a conventional  
+X build.  
+On the webkit2gtk side of things the performance, espacially on heavy sites, is  
+very poor. This can be improved by coupling mesa with `libglvnd` to provide a so  
+called vendor neutral libgl.so which makes webkit2gtk play much nicer. When  
+there is a "libgl.so", `opengl` alongside with the wayland only `wpebackend-fdo`  
+for hardware accelerated rendering can be enabled.  
 
-NOTE: Some browser like `surfer` and `wyeb` come along with gtk+3 and wayland
-      backend only. Vimb e.g. requieres also the Xorg backend. My smallest X-
-      and wayland backend enabled gtk+3 build needs the following(just disable
-      everything with a "X"):
-      'libX11' 'libXau' 'libXext' 'libXi' 'libxcb'
+NOTE: A libglvnd based build requieres:  
+      `libX11 libXau libXext libXslt libxcb libxkbcommon xcb-proto`  
+      `xkeyboard-config xorgproto`  
+
+NOTE: Some browser like `surfer` and `wyeb` come along with gtk+3 and wayland  
+      backend only. Vimb e.g. requieres also the Xorg backend. My smallest X-  
+      and wayland backend enabled gtk+3 build needs the following. Just disable  
+      everything with a "X". There may be more requiered at build time.  
+      'libX11' 'libXau' 'libXext' 'libXi' 'libxcb'  
       
-      NOTE: There may be more requiered at build time.
+For Firefox `libglvnd` aswell as the X11 backend for gtk+3 is requiered. The  
+dependencies can be shrunk but while there is no option yet to disable the X11  
+backend, the efforts are low on reward. The follwing can be ditched:  
 
-For Firefox `libglvnd` aswell as the X11 backend for gtk+3 is requiered. The
-dependencies can be shrunk but while there is no option yet to disable the X11
-backend, the efforts are low on reward. The follwing can be ditched:
-
-`libXinerama` `libXxf86vm` `libxshmfence`
-```
+`libXinerama` `libXxf86vm` `libxshmfence`  
  
 ## Compatibility variables
 ```

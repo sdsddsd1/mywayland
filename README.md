@@ -33,8 +33,8 @@ NOTE: Some browser like `surfer` and `wyeb` come along with gtk+3 and wayland
       `libX11` `libXau` `libXext` `libXi` `libxcb`  
       
 For Firefox, `libglvnd` aswell as the X11 backend for gtk+3 is requiered. The  
-dependencies can be shrunk, but while there is no option yet to disable the X11  
-backend, the efforts are low on reward. The follwing can be ditched:  
+dependencies can be shrunk, but while there is no option yet to disable the
+firefox X11 backend, the efforts are low on reward. The follwing can be ditched:  
 `libXinerama` `libXxf86vm` `libxshmfence`  
  
 ## Compatibility variables

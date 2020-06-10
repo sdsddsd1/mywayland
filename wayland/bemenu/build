@@ -3,6 +3,6 @@
 #GCC10 fix
 export CFLAGS="$CFLAGS -fcommon"
 
-make PREFIX=/usr
+make clients wayland PREFIX=/usr
 
 make PREFIX=/usr DESTDIR="$1" install

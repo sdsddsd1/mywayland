@@ -1,6 +1,5 @@
-cmake make
+cairo
 pango
-libXinerama
 libxkbcommon make
-wayland make
-wlroots make
+wayland-protocols
+wayland

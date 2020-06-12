@@ -1,6 +1,5 @@
 libjpeg-turbo
 meson make
-pango
 samurai make
 wayland-protocols make
 wayland

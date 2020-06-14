@@ -1,0 +1,3 @@
+#!/bin/sh
+
+chmod u+s "$1/usr/bin/wayfire"

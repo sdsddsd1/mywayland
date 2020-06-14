@@ -6,6 +6,9 @@ Sway/hikari/Cagebreak are build with suid bit. This seems to be commonly used
 next to elogind but is not considered 100% ideal.   
 The capability method got abandoned because of questionable security.  
 
+NOTE: Due to problems witht the release of wf-config, it is a git version.
+Therefore wlroots has also to be build as git.
+
 
 ## NoXland
 

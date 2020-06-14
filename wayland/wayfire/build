@@ -1,0 +1,15 @@
+#!/bin/sh -e
+
+#export CFLAGS="$CFLAGS -fcommon"
+
+export DESTDIR="$1"
+
+meson \
+    --prefix=/usr \
+    --buildtype=plain \
+    -Duse_system_wlroots=enabled \
+    -Duse_system_wfconfig=enabled \
+    . build
+
+ninja -C build
+ninja -C build install

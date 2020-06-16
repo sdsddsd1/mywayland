@@ -29,7 +29,7 @@ be ditched, but the requierements are high.
 Note: Some games requiere libX11 and opengl.  
   
   
-Steps to reproduce my efforts:  
+### Steps to reproduce  
 First, while you might have to rebuild stuff more than once, install ccache.  
 Following the motto "It is easier to add stuff than to remove", I recommend  
 a system reset and start from scratch. This way you have no unwelcomed packages  

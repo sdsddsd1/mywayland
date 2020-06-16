@@ -1,45 +1,60 @@
 # Native experimental Wayland session for KISS 🌿
 
-Tests done with Intel graphics.  
-Eudev dependency for Wlroots!  
+Tests done with Intel graphics. Eudev dependency for Wlroots!  
 Sway/hikari/Cagebreak are build with suid bit. This seems to be commonly used  
 next to elogind but is not considered 100% ideal.   
 The capability method got abandoned because of questionable security.  
 
 NOTE: Due to problems with the latest release of `wf-config` and `wayfire`, they   
-both are packaged as a git version. Therefore wlroots has also to be build as git.
+both are packaged as a git version. Therefore wlroots has also to be build as  
+git.
 
 
 ## NoXland
 
-NoXland is an approach to ditch as many X dependencies as possible. While  
-`libxkbcommon` and `xkeyboard-config` are the minimum requiered for qt5 and  
-webkit2gtk based browsers, firefox needs a lot more.  
+NoXland is an approach to provide a wayland only session with as many  
+dependencies of X ditched as possible.  
+While `libxkbcommon` and `xkeyboard-config` are the minimum requiered for a  
+graphical base system, they are also sufficent for qt based browsers in commu-   
+nity and the ones mentioned here, without deficiencies in performance.  
+Webkit2gtk based browser also get along with the aforementioned, but the  
+performance is very poor. Therefore, mesa can be build with `libglvnd` to provide  
+the missing opengl functionality. This pulls in libX11 and some others. The  
+package count is still less than a conventional build.   
+Furthermore gtk+3 can be build without the X11 backend(gdkx.h). Wyeb and surfer  
+work without it. Vimb not.  
+Firefox needs the X11 gtk+3 backend and opengl(`libglvnd`). X dependencies can  
+be ditched, but the requierements are high.  
+  
+Note: Some games requiere libX11 and opengl.  
+  
+  
+Steps to reproduce my efforts:  
+First, while you might have to rebuild stuff more than once, install ccache.  
+Following the motto "It is easier to add stuff than to remove", I recommend  
+a system reset and start from scratch. This way you have no unwelcomed packages  
+to build against and error messages will point you to the right places to look  
+at. Also check after each build if there is stuff which can be removed.  
+I also suggest to compare the above packages, to the official ones. Mesa is pro-  
+vided with `libglvnd` and can be forked towards your own needs.  
 
-Qt5 browsers like `viper-browser`, `Crusta` and `jsml` are tested well and  
-just need their qt dependencies to behave performance wise like a conventional  
-X build.  
-On the webkit2gtk side of things the performance, espacially on heavy sites, is  
-very poor. This can be improved by coupling mesa with `libglvnd` to provide a so  
-called vendor neutral libgl.so which makes webkit2gtk play much nicer. When  
-there is a "libgl.so", `opengl` alongside with the wayland only `wpebackend-fdo`  
-for hardware accelerated rendering can be enabled.  
+Note:The following expects  that `libxkbcommon` and `xkeyboard-config` are  
+     installed.  
 
-NOTE: A libglvnd based build requieres:  
-      `libX11 libXau libXext libXslt libxcb libxkbcommon xcb-proto`  
-      `xkeyboard-config xorgproto`  
+Qt5 is the easiest to build. Just remove everything with a "x" in the depends-  
+file and there should be no problem towards qt5-webengine. Falkon requieres the  
+configure flag `-DNO_X11=ON`. Qt5-x11extras is not needed.  
 
-NOTE: Some browser like `surfer` and `wyeb` come along with gtk+3 and wayland  
-      backend only. Vimb e.g. requieres also the Xorg backend. My smallest X-  
-      and wayland backend enabled gtk+3 build needs the following. Just disable  
-      everything with a "X". There may be more requiered at build time.  
-      `libX11` `libXau` `libXext` `libXi` `libxcb`  
-      
-For Firefox, `libglvnd` aswell as the X11 backend for gtk+3 is requiered. The  
-dependencies can be shrunk, but while there is no option yet to disable the  
-firefox X11 backend, the efforts are low on reward. The follwing can be ditched:  
-`libXinerama` `libXxf86vm` `libxshmfence`  
- 
+Gtk+3 without X11 backend is also easy to build. See the package above. However,  
+to enable it, `--enable-x11-backend` has to be explicitly set.  
+There is more X requiered at build time that will be orphaned afterwards.
+
+libX11` `libXau` `libXext` `libXi` `libxcb`  
+
+For Firefox, I was able to remove `libXinerama` `libXxf86vm` `libxshmfence` at  
+buildtime.
+
+
 ## Compatibility variables
 ```
 BEMENU_BACKEND=wayland

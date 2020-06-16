@@ -49,7 +49,7 @@ Gtk+3 without X11 backend is also easy to build. See the package above. However,
 to enable it, `--enable-x11-backend` has to be explicitly set.  
 There is more X requiered at build time that will be orphaned afterwards.
 
-libX11` `libXau` `libXext` `libXi` `libxcb`  
+`libX11` `libXau` `libXext` `libXi` `libxcb`  
 
 For Firefox, I was able to remove `libXinerama` `libXxf86vm` `libxshmfence` at  
 buildtime.

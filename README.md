@@ -16,7 +16,7 @@ dependencies of X ditched as possible.
 While `libxkbcommon` and `xkeyboard-config` are the minimum requiered for a  
 graphical base system, they are also sufficent for qt based browsers in commu-   
 nity and the ones mentioned here, without deficiencies in performance.  
-Webkit2gtk based browser also get along with the aforementioned, but the  
+Webkit2gtk based browser _can_ get along with the aforementioned, but the  
 performance is very poor. Therefore, mesa can be build with `libglvnd` to provide  
 the missing opengl functionality. This pulls in libX11 and some others. The  
 package count is still less than a conventional build.   
@@ -46,9 +46,8 @@ configure flag `-DNO_X11=ON`. Qt5-x11extras is not needed.
 
 Gtk+3 without X11 backend is also easy to build. See the package above. However,  
 to enable it, `--enable-x11-backend` has to be explicitly set.  
+The actual depends file will list: `libX11` `libXau` `libXext` `libXi` `libxcb`.  
 There is more X requiered at build time that will be orphaned afterwards.
-
-`libX11` `libXau` `libXext` `libXi` `libxcb`  
 
 For Firefox, I was able to remove `libXinerama` `libXxf86vm` `libxshmfence` at  
 buildtime.

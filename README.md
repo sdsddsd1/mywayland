@@ -33,9 +33,9 @@ First, while you might have to rebuild stuff more than once, install ccache.
 Following the motto "It is easier to add stuff than to remove", I recommend  
 a system reset and start from scratch. This way you have no unwelcomed packages  
 to build against and error messages will point you to the right places to look  
-at. Also check after each build if there is stuff which can be removed.  
-I also suggest to compare the above packages, to the official ones. Mesa is pro-  
-vided with `libglvnd` and can be forked towards your own needs.  
+at. Check after each build if there is stuff which can be removed. I also suggest  
+to compare the above packages to the official ones. Mesa is provided with  
+`libglvnd` and can be forked towards your own needs.  
 
 Note:The following expects  that `libxkbcommon` and `xkeyboard-config` are  
      installed.  

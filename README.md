@@ -1,9 +1,8 @@
 # Native experimental Wayland session for KISS 🌿
 
 Tests done with Intel graphics. Eudev dependency for Wlroots!  
-Sway/hikari/Cagebreak are build with suid bit. This seems to be commonly used  
-next to elogind but is not considered 100% ideal.   
-The capability method got abandoned because of questionable security.  
+Compositors are build with suid bit. This seems to be commonly used next to  
+elogind but is not considered 100% ideal.   
 
 NOTE: Due to problems with the latest release of `wf-config` and `wayfire`, they   
 both are packaged as a git version. Therefore wlroots has also to be build as  

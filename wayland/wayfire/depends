@@ -1,5 +1,6 @@
 cairo
 glm
+libexecinfo
 linux-headers make
 meson make
 wlroots

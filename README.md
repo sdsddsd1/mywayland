@@ -2,10 +2,11 @@
 
 Tests done with Intel graphics. Eudev dependency for Wlroots!  
 Compositors are build with suid bit. This seems to be commonly used next to  
-elogind but is not considered 100% ideal.   
-If you have experience with elogind, dont hesitate to jump in. With [KISS-kde](https://github.com/dilyn-corner/KISS-kde#kiss-kde)  
-there is already an atempt to pave the way for `elogind` towards KISS. This might,  
-altough much more complex, the sanest way to launch any wlroots based compositor.  
+logind but is of course not 100% ideal.   
+If you have experience with `elogind`, dont hesitate to jump in. With [KISS-kde](https://github.com/dilyn-corner/KISS-kde#kiss-kde)  
+there is already an attempt to pave the way for it towards KISS. This might,  
+altough much more complex, the sanest way to launch any wlroots based compositor. 
+For this repo I envision a solution with the least graphical frills possible.
 
 
 NOTE: Due to problems with the latest release of `wf-config` and `wayfire`, they   

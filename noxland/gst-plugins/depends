@@ -4,7 +4,7 @@ gdk-pixbuf
 gstreamer
 gst-plugins-base
 lame
-lcms2
+lcms
 libjpeg-turbo
 libpng
 libressl

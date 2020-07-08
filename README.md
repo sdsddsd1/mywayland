@@ -91,6 +91,7 @@ Make sure to have KMS enabled.
 ```
 
 ## Links
+- [Awesome Wayland](https://github.com/natpen/awesome-wayland) - A curated list of Wayland code and resources
 - [mvi - view images in mpv](https://github.com/occivink/mpv-image-viewer)  
 - [Surfer](https://github.com/nihilowy/surfer) 
 - [wyeb](https://github.com/jun7/wyeb)  

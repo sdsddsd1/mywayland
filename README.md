@@ -95,7 +95,6 @@ Make sure to have KMS enabled.
 - [mvi - view images in mpv](https://github.com/occivink/mpv-image-viewer)  
 - [Surfer](https://github.com/nihilowy/surfer) 
 - [wyeb](https://github.com/jun7/wyeb)  
-- [jsml](https://github.com/troysung/jsml)  
 - [Crusta](https://github.com/Tarptaeya/Crusta)
 - [Dooble](https://github.com/textbrowser/dooble/tree/master/2.x)
 

@@ -92,4 +92,4 @@ Make sure to have KMS enabled.
 
 ## Links
 - [Awesome Wayland](https://github.com/natpen/awesome-wayland) - A curated list of Wayland code and resources
-- [mvi - view images in mpv](https://github.com/occivink/mpv-image-viewer)  
+- [mvi](https://github.com/occivink/mpv-image-viewer) - View images in mpv 

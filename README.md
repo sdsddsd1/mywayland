@@ -10,8 +10,7 @@ For this repo I envision a solution with the least graphical frills possible.
 
 
 NOTE: Due to problems with the latest release of `wf-config` and `wayfire`, they   
-both are packaged as a git version. Therefore wlroots has also to be build as  
-git.
+both are packaged as a git version.
 
 
 ## NoXland

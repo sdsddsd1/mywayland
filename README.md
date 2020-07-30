@@ -1,3 +1,8 @@
+# NOTE: This repository is no longer maintained.
+Feel free to fork and use my efforts towards noXland
+if you find value in it.  
+
+
 # Native experimental Wayland session for KISS 🌿
 
 Tests done with Intel graphics. Eudev dependency for Wlroots!  
